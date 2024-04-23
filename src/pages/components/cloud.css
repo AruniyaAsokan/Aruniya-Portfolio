@@ -1,21 +1,4 @@
 .parallax{
-   
-  
-  height: 75vh;
-  display: grid;
-  position: relative;
-  grid-template-areas: "stack";
-  z-index: -1;
-  /* perspective: 20px; */
-
-  /* overflow-y: auto;
-  overflow-x: hidden; */
-  
-  
-
-}
-
-/* .head{
   position: relative;
   display: flex;
   justify-content: center;
@@ -23,142 +6,24 @@
   height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
-} */
+}
 
+.sky {
+  transform: translateZ(-10px) scale(2);
+}
+
+.mount1, .mount2, .mount3 {
+  transform: translateZ(-10px) scale(2);
+}
+
+.cloud2, .cloud3, .cloudMask {
+  transform: translateZ(-5px) scale(1.5)
+}
 
 .parallax > * {
-  grid-area: stack;
-  animation: parallax linear;  
-  animation-timeline: scroll();
-}
-.parallax > img{
-  width: 100%;
-}
-
-/* .sky,
-.mount1,
-.mount2,
-.cloud2,
-.mount3,
-.cloud3,
-.cloudMask {
-  animation: parallax linear;
-  grid-area: stack;
-  animation-timeline: scroll();
-} */
-
-
-
-
-/* #parallax::-webkit-scrollbar{
-  display: none;
-} */
-
-/* .section1{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
   height: 100%;
-  transform-style: preserve-3d;
-  
-  
-}  */
-/* 
-.sky, .cloud1, .cloud2, .cloud3, .mount1, .mount2, .mount3, .cloudMask{
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  position: absolute;
-}
-*/
-/* .sky, .cloud1, .cloud2, .cloud3, .mount1, .mount2, .mount3, .cloudMask {
-  position: absolute;
-  width: 100%;
-  bottom: 0; 
-} */
-.sky {
-  
-  /* transform: translateZ(-10px) scale(2);  */
-  z-index: 1;
-  --parallax-speed: -0.3;
-  
- 
- 
-  
-  
-}
-
-
-.mount1 {
-  /* transform: translateZ(-10px) translateY(300px)  scale(1.7);  */
-  z-index: 2;
-  --parallax-speed: -0.3;
-  
-}
-
-
-.mount2 {
-  /* transform: translateZ(-5px) translateY(200px) scale(1.26); */
-  z-index: 3;
-  --parallax-speed: -2;
-  
-  
-  position: absolute;
-  top: 12em;
-  
-  
-}
-
-.cloud2{
-  /* transform: translateZ(8px)  scale(0.6); */
-  z-index: 4;
-  --parallax-speed: -7;
-  
-  position: absolute;
-  top: 25em;
-  
-  
-
-}
-
-.mount3 {
-  /* transform: translateZ(10px) translateY(60px) translateX(-70px) scale(0.6); */
-  z-index: 5;
-  --parallax-speed: -17;
-  position: absolute;
-  top: 100em;
-  
-}
-
-.cloud3 {
-  /* transform: translateZ(12px) translateY(40px) scale(0.4); */
-  z-index: 6;
-  --parallax-speed: -15;
-  position: absolute;
-  top: 85em;
-  
-}
-
-.cloudMask{
-  /* transform: translateZ(15px) translateY(70px) translateX(60px) scale(0.34); */
-  z-index: 999;
-  --parallax-speed: -27;
-  position: absolute;
-  top: 170em;
-  
-  /* scroll-margin-top: calc(100vh - 100%);
-  scroll-snap-align: start; */
-
-  /* align-self: end;
-  transform-origin: bottom;
-  mix-blend-mode: white; */
-}
-
-
-@keyframes parallax{
-  to{
-      transform: translateY(calc(var(--parallax-speed)*200px));
-     
-  }
+  z-index: -1;
 }
