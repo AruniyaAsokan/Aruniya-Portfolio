@@ -212,15 +212,65 @@ body{
   }
 }
 
-.sec3{
-  height: 100vh;
-  background-color: white;
+.main-content {
   position: relative;
-  margin-top: 0;
+  /* z-index: 1; */
+  background: hsl(0, 0%, 100%);
+  padding-block: 6rem;
+}
+
+.sec3{
+  
+  background: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  
+  
+}
+.sec4{
+  background-image: url('./assets/yaiba.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
 }
 
 
+.text1{
+  /* overflow: hidden;
+  position: relative; */
+  font-weight: 1000;
+  font-size: 5em;
+  background: linear-gradient(#3794ffc3,#ff459fd1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Raleway", sans-serif;
+  filter: drop-shadow(7px 7px 8px rgba(0, 0, 0, 0.479));
 
+}
+.text2{
+  overflow: hidden;
+  position: relative;
+}
 
-
-
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
