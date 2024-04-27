@@ -222,19 +222,16 @@ body{
 .sec3{
   
   background: white;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  z-index: 2000;
+  z-index: 2000;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  
-  
-  
+  text-align: center; 
 }
 .sec4{
   background-image: url('./assets/inu.jpg');
