@@ -65,9 +65,42 @@ function Home() {
 
 
           <Clouds />
-          
+          <section className="sec3">
+            <div className="text1">
+              FURTHER
+            </div>
+          </section>
 
-          
+          <section className="sec4">
+            <div className="text2">
+            </div>
+          </section>
+
+          <section className="sec5">
+            <div className="text3">
+              <h1 className="h1_tag">Let's</h1>
+              <h1 className="h1_tag">Connect</h1>
+              <br/><br/>
+              <h3>Mail</h3>
+              <p>hello@react.dev</p>
+              <br/><br/>
+              <h3>Address</h3>
+              <p> 123 Avenue Street New York</p>
+              <br/><br/>
+              <h3> Phone</h3>
+              <p> +12345678</p>
+            </div>
+            <form className="fill">
+              <input className="f_name" type="text" placeholder='Name'></input><br/>
+              <input className="f_email" type="text" placeholder='Email'></input><br/>
+              <input className ="f_message" type="text" placeholder='Message'></input><br/>
+              <button className="f_submit" >Submit</button>
+
+            </form>
+
+          </section>
+
+
         </div>
 
       </body>

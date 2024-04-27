@@ -222,19 +222,20 @@ body{
 .sec3{
   
   background: white;
-  /* background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  z-index: 2000;*/
+  z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center; 
+  
 }
 .sec4{
-  background-image: url('./assets/inu.jpg');
+  background-image: url('./assets/House.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,8 +250,15 @@ body{
 
 
 .text1{
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden;
+  position: relative; */
+  font-weight: 1000;
+  font-size: 5em;
+  background: linear-gradient(#3794ffc3,#ff459fd1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Raleway", sans-serif;
+  filter: drop-shadow(7px 7px 8px rgba(0, 0, 0, 0.479));
 
 }
 .text2{
@@ -264,3 +272,77 @@ body{
   overflow-x: hidden;
   perspective: 10px;
 }
+
+
+.sec5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  height: 100vh;
+  background-image: url('./assets/halftone.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.h1_tag{
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.text3{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.fill{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 20px;
+  width: 30rem;
+  border-radius: 0.4em;
+  border-color: rgb(255, 255, 255);
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.f_submit{
+  height: 3rem;
+  background-color:#feac14;
+  border: none;
+  transition: background-color 1s;
+  color: white; 
+  font-family: "Raleway", sans-serif;
+}
+
+.f_submit:hover{
+  background-color: white ;
+  color: #feac14 ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.f_name, .f_message, .f_email{
+  background-color: transparent;
+
+}
+
+
+input:focus {
+  outline: white;
+  border: 3px solid white;
+
+}
+
+::placeholder{
+  color: white;
+}
+
+
