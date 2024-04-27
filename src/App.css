@@ -318,7 +318,6 @@ input{
   border: none;
   transition: background-color 1s;
   color: white; 
-  cursor: pointer;
   font-family: "Raleway", sans-serif;
 }
 
@@ -326,7 +325,6 @@ input{
   background-color: white ;
   color: #feac14 ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
 }
 
 
@@ -339,7 +337,7 @@ input{
 
 input:focus {
   outline: white;
-  border: 2px solid white;
+  border: 3px solid white;
 
 }
 
@@ -347,28 +345,4 @@ input:focus {
   color: white;
 }
 
-.f_message{
-  padding: 20px;
-  width: 30rem;
-  border: 2px solid white;
-  border-radius: 0.4em;
-  border-color: rgb(255, 255, 255);
-  color: white;
-  font-family: "Raleway", sans-serif;
-}
-.f_message:focus{
-  outline: white;
-  border: 2px solid white;
-}
-
-.phonesvg{
-  stroke: orange;
-  /* background-color: rebeccapurple; */
-  position: absolute;
-  margin: auto;
-}
-
-.formContainer{
-  position: relative;
-}
 

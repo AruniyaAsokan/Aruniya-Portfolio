@@ -7,26 +7,10 @@ import git_hub from '../assets/git.svg'
 import insta from '../assets/insta.svg'
 import Clouds from './components/Clouds'
 import takao from '../assets/takao.jpg'
-import {motion} from "framer-motion"
+
 
 function Home() {
   // const [count, setCount] = useState(0)
-  const variants = {
-    initial: {
-      y: 500,
-      opacity: 0,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        staggerChildren: 0.1,
-      },
-  
-    },
-  
-  };
   return (
 
     <>
@@ -93,23 +77,23 @@ function Home() {
           </section>
 
           <section className="sec5">
-          <motion.div className="text3" variants={variants} initial="initial" whileInView="animate">
-              <motion.h1 className="h1_tag" variants={variants}>Let's</motion.h1>
-              <motion.h1 className="h1_tag" variants={variants}>Connect</motion.h1>
+            <div className="text3">
+              <h1 className="h1_tag">Let's</h1>
+              <h1 className="h1_tag">Connect</h1>
               <br/><br/>
-              <motion.h3 variants={variants}>Mail</motion.h3>
-              <motion.p variants={variants}>hello@react.dev</motion.p>
+              <h3>Mail</h3>
+              <p>hello@react.dev</p>
               <br/><br/>
-              <motion.h3 variants={variants}>Address</motion.h3>
-              <motion.p variants={variants}> 123 Avenue Street New York</motion.p>
+              <h3>Address</h3>
+              <p> 123 Avenue Street New York</p>
               <br/><br/>
-              <motion.h3 variants={variants}> Phone</motion.h3>
-              <motion.p variants={variants}> +12345678</motion.p>
-            </motion.div>
+              <h3> Phone</h3>
+              <p> +12345678</p>
+            </div>
             <form className="fill">
               <input className="f_name" type="text" placeholder='Name'></input><br/>
               <input className="f_email" type="text" placeholder='Email'></input><br/>
-              <textarea className ="f_message" rows={8} placeholder='Message'></textarea><br/>
+              <input className ="f_message" type="text" placeholder='Message'></input><br/>
               <button className="f_submit" >Submit</button>
 
             </form>
