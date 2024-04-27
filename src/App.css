@@ -345,4 +345,13 @@ input:focus {
   color: white;
 }
 
+.f_message{
+  padding: 20px;
+  width: 30rem;
+  border: 2px solid white;
+  border-radius: 0.4em;
+  border-color: rgb(255, 255, 255);
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
 
