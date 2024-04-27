@@ -70,7 +70,32 @@
   gap: 0.3em;
 }
 
-.down_arrow:hover{
-  /* transform: translateY(7px); */
-  transition: bottom 0.02sec;
+/* .image_container{
+  position: relative;
+  display: inline-block;
+
 }
+.downarrow{
+  transition: transform 0.3s ease;
+  
+
+  
+}
+.image_container:hover .downarrow{
+  /* transform: translateY(7px); */
+  /* transform: translateY(50px); */
+  /* bottom: 50px; 
+  transform: translate(0, 10px);
+} */
+
+@keyframes shake {
+ 
+  100% { transform: translate(0px, 11px) rotate(0deg); }
+
+}
+
+.downarrow:hover {
+  animation: shake 0.5s forwards;
+  animation-iteration-count: one;
+}
+
