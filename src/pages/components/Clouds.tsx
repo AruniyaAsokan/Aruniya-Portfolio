@@ -18,10 +18,8 @@ export default function Clouds() {
   const variants = {
     move: {
       
-      translateX: "0.5px",
-      scale: 2,
-      
-      
+      translateY: "20px",
+      scale: 1,
 
     }
 
@@ -41,23 +39,23 @@ export default function Clouds() {
         <img className="mount3" src={mount3} alt= "mount3"/>
         <img className="cloud3" src={cloud3} alt= "cloud3"/>
         <img className="cloudMask" src={cloudMask} alt="cloudMask"/>
-        <h1 className="hero">EXPLORE  
-        <motion.div className="image_container" variants={variants} onHoverStart="move"
-        // onMouseOver={handleMouseOver}
-        // onMouseOut={handleMouseOut}
-        // ref={imageRef} 
-        >
-        <motion.img 
-            className="downarrow" 
-            src={downarrow} 
-            alt="white_down_arrow"  
-            
-          />
-        </motion.div>
-        </h1>
-        
-        
+  
     </div>
+
+    <div id="hero">EXPLORE 
+          <motion.div id="image_container" variants={variants} whileHover="move"
+          // onMouseOver={handleMouseOver}
+          // onMouseOut={handleMouseOut}
+          // ref={imageRef} 
+          >
+            <motion.img 
+                id="downarrow" 
+                src={downarrow} 
+                alt="white_down_arrow"  
+                
+            />
+          </motion.div>
+        </div>
     
     
     </>

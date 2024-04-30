@@ -41,6 +41,7 @@
 
 .cloudMask{
   transform: translateZ(1px) scale(1.2);
+  
 }
 
 .parallax > * {
@@ -48,15 +49,16 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
+  /* z-index: -1; */
 
 }
 
-.hero{
-  z-index: 999;
+#hero{
+  z-index: 0;
   font-size: 800;
   color: rgb(255, 255, 255);
   display: flex;
+  
   flex-direction: column; 
   justify-content: center;
   align-items: center;
@@ -68,6 +70,7 @@
   position: relative;
   top: -10px;
   gap: 0.3em;
+  z-index: 2;
 }
 
 /* .image_container{
@@ -88,7 +91,7 @@
   transform: translate(0, 10px);
 } */
 
-@keyframes shake {
+/* @keyframes shake {
  
   100% { transform: translate(0px, 11px) rotate(0deg); }
 
@@ -97,5 +100,16 @@
 .downarrow:hover {
   animation: shake 0.5s forwards;
   animation-iteration-count: one;
+  
+} */
+#image_container{  
+  z-index: 2;
+  position: relative;
+}
+
+#downarrow{
+  z-index: 2;
+  position: relative;
+
 }
 
