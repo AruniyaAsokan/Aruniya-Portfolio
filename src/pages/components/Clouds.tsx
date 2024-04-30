@@ -7,26 +7,27 @@ import mount3 from "../../assets/parallax-imgs/mount3.webp"
 import sky from "../../assets/parallax-imgs/sky.jpg"
 import cloudMask from "../../assets/parallax-imgs/cloudMask.png"
 import downarrow from "../../assets/whitearrow.png"
+import {motion} from "framer-motion"
 // import { useRef} from "react";
 // import React, { useState } from 'react';
 
 export default function Clouds() {
-  // const [isHovered, setIsHovered] = useState(false);
-  // const imageRef = useRef<HTMLImageElement>(null);
   
-
-  // const handleMouseOver = () => {
-  //   if (imageRef.current) {
-  //     imageRef.current.style.marginTop = '60px';
-  //   }
-  // };
-
-  // const handleMouseOut = () => {
-  //   if (imageRef.current) {
-  //     imageRef.current.style.marginTop = '0px';
-  //   }
-  // };
   
+  
+  const variants = {
+    move: {
+      
+      translateX: "0.5px",
+      scale: 2,
+      
+      
+
+    }
+
+    
+
+  };
 
   return (
     <>
@@ -41,23 +42,18 @@ export default function Clouds() {
         <img className="cloud3" src={cloud3} alt= "cloud3"/>
         <img className="cloudMask" src={cloudMask} alt="cloudMask"/>
         <h1 className="hero">EXPLORE  
-        <div className="image_container"
+        <motion.div className="image_container" variants={variants} onHoverStart="move"
         // onMouseOver={handleMouseOver}
         // onMouseOut={handleMouseOut}
         // ref={imageRef} 
         >
-        <img 
+        <motion.img 
             className="downarrow" 
             src={downarrow} 
-            alt="white_down_arrow" 
-            // onMouseEnter={() => setIsHovered(true)} // Set isHovered to true on mouse enter
-            // onMouseLeave={() => setIsHovered(false)} // Set isHovered to false on mouse leave
-            // style={{ 
-            //   transform: isHovered ? 'translateY(10px)' : 'translateY(0)', // Move image down on hover
-            //   transition: 'transform 0.3s ease' // Apply smooth transition
-            // }}
+            alt="white_down_arrow"  
+            
           />
-        </div>
+        </motion.div>
         </h1>
         
         

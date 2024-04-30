@@ -162,12 +162,22 @@ body{
   
 }
 
-.animate-pop {
+/* .animate-pop {
   animation: pop-up 600ms cubic-bezier(1, 1.8, 0, 0.78);
-  /* cubic-bezier(0.32, 1.17, 0.32, 1.11) */
-}
+ 
+  
+} */
 
-@keyframes pop-up {
+ /* cubic-bezier(0.32, 1.17, 0.32, 1.11) */
+
+/* .animate-pop2{
+
+  animation: pop-up 600ms cubic-bezier(1, 1.8, 0, 0.78) 700ms ;
+  
+} */
+
+
+/* @keyframes pop-up {
   0% {
       transform: scale(0);
       opacity: 0;
@@ -177,7 +187,7 @@ body{
       transform: scale(1);
       opacity: 1;
   }
-}
+} */
 
 
 

@@ -8,6 +8,7 @@ import insta from '../assets/insta.svg'
 import Clouds from './components/Clouds'
 import takao from '../assets/takao.jpg'
 import {motion} from "framer-motion"
+import { cubicBezier } from "framer-motion"
 
 function Home() {
   // const [count, setCount] = useState(0)
@@ -25,8 +26,25 @@ function Home() {
       },
   
     },
+
+    initial2: {
+      scale: 0,
+      opacity: 0,
+    },
+
+    animate2: {
+      scale: 1,
+      opacity: 1,
+      animation: {
+        cubic: cubicBezier(1, 1.8, 0, 0.78),
+      },
+    }
   
   };
+  
+ 
+  
+
   return (
 
     <>
@@ -49,7 +67,7 @@ function Home() {
             <div className="content">
               <div className="desc">
                 <h1 className="heading" >Greetings, I'm </h1>
-                <h1 className="name animate-pop">Kiyotaka Ayanokōji</h1>
+                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Kiyotaka Ayanokōji</motion.h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 <div className="links">
                   <img src={l} alt="linkedin_logo" width="20" height="20"></img>
@@ -62,7 +80,7 @@ function Home() {
 
               <div className="img_bg">
                 <div className="circle1"></div>
-                <img className="pfp animate-pop" src={pfp} alt="Ayanokoji" />
+                <motion.img className="pfp animate-pop" src={pfp} alt="Ayanokoji" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
                 <div className="circle2"></div>
                 <div className="circle3"></div>
                 <div className="circle4"></div>
@@ -71,12 +89,12 @@ function Home() {
           </div>
 
           <section className="sec2">
-            <div className="animate-pop ">
-              <h1 >CURIOUS... BY NAME, BY NATURE</h1>
-              <p>It’s what inspires us to whip up, throw together, tear, shake, and break the rules – on a mission to redefine food for a new generation.
-              </p>
-            </div>
-            <img className="sec2_img animate-pop " src={takao} alt="kurko_basuke" />
+            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4}} viewport={{ once: true }} >
+              <motion.h1 >CURIOUS... BY NAME, BY NATURE</motion.h1>
+              <motion.p>It’s what inspires us to whip up, throw together, tear, shake, and break the rules – on a mission to redefine food for a new generation.
+              </motion.p>
+            </motion.div>
+            <motion.img className="sec2_img animate-pop " src={takao} alt="kurko_basuke" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} />
           </section>
 
 
@@ -93,7 +111,7 @@ function Home() {
           </section>
 
           <section className="sec5">
-          <motion.div className="text3" variants={variants} initial="initial" whileInView="animate">
+          <motion.div className="text3" variants={variants} initial="initial" whileInView="animate" viewport={{ once: true }}>
               <motion.h1 className="h1_tag" variants={variants}>Let's</motion.h1>
               <motion.h1 className="h1_tag" variants={variants}>Connect</motion.h1>
               <br/><br/>
@@ -158,5 +176,7 @@ function Home() {
 
   )
 }
+
+
 
 export default Home
