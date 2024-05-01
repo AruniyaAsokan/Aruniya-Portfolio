@@ -106,10 +106,14 @@ function Home() {
             <div className="text1">
               FURTHER
             </div>
+            
           </section>
 
           <section className="sec4">
+          <div className="feature-content">
             <div className="text2">
+             
+              </div>
             </div>
           </section>
 
