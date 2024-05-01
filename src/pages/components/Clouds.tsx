@@ -13,7 +13,15 @@ import {motion} from "framer-motion"
 
 export default function Clouds() {
   
-  
+//   const sec3 = useRef(null);
+//   const scrollToSection = (elementRef) => {
+//   window.scrollTo({
+//     top: elementRef.current.offsetTop,
+//     behavior: "smooth",
+//   });
+//  };
+  // 
+
   
   const variants = {
     move: {
@@ -23,13 +31,16 @@ export default function Clouds() {
 
     }
 
+    // tap: {
+
+    // }
+
     
 
   };
 
   return (
     <>
-   
     <div className="parallax">
 
         <img className="sky" src={sky} alt= "sky"/>
@@ -41,9 +52,11 @@ export default function Clouds() {
         <img className="cloudMask" src={cloudMask} alt="cloudMask"/>
   
     </div>
-
-    <div id="hero">EXPLORE 
-          <motion.div id="image_container" variants={variants} whileHover="move"
+    <div id="center-hero">
+    <div id="hero">
+      EXPLORE 
+        <a href="#further">
+          <motion.div id="image_container" variants={variants} whileHover="move" whileTap="tap"
           // onMouseOver={handleMouseOver}
           // onMouseOut={handleMouseOut}
           // ref={imageRef} 
@@ -55,10 +68,10 @@ export default function Clouds() {
                 
             />
           </motion.div>
+          </a>
         </div>
-    
-    
-    </>
+      </div>
+      </>
    
   )
 }

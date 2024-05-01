@@ -9,16 +9,19 @@ import Clouds from './components/Clouds'
 import takao from '../assets/takao.jpg'
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
+import ham from "../assets/ham.svg"
 
 function Home() {
+
   // const [count, setCount] = useState(0)
+  
   const variants = {
     initial: {
-      x: 500,
+      y: 100,
       opacity: 0,
     },
     animate: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
@@ -43,7 +46,6 @@ function Home() {
   };
   
  
-  
 
   return (
 
@@ -52,8 +54,7 @@ function Home() {
         <div className='wrapper'>
           <div id="bg">
             <nav>
-              <h1 className="title"> Portfolio </h1>
-
+              <h1 className="title">  Portfolio  </h1>
               <ul className="sections">
                 <li><a href=" ">Home</a></li>
                 <li><a href=" ">Projects</a></li>
@@ -63,6 +64,7 @@ function Home() {
               <button className="hiButton">
                 Say hi!
               </button>
+              <img className="hamicon" src={ham} alt="ham icon"/>
             </nav>
             <div className="content">
               <div className="desc">
@@ -99,7 +101,8 @@ function Home() {
 
 
           <Clouds />
-          <section className="sec3">
+          
+          <section id ="further" className="sec3">
             <div className="text1">
               FURTHER
             </div>
@@ -127,7 +130,7 @@ function Home() {
             
             <div className='formContainer'>
               <motion.div className='phonesvg' initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:3, duration:0.5}} >
-                <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+                <svg className="phonecall" width="450px" height="450px" viewBox="0 0 32.666 32.666">
                 <motion.path
                   strokeWidth={0.2}
                   fill="none"
@@ -153,11 +156,10 @@ function Home() {
               </motion.div>
 
             <motion.form className="fill" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:3.5, duration:1}} >
-              <input className="f_name" type="text" placeholder='Name'></input><br/>
-              <input className="f_email" type="text" placeholder='Email'></input><br/>
-              <input className ="f_message" type="text" placeholder='Message'></input><br/>
-              <textarea rows={8} className ="f_message" placeholder='Message'/><br/>
-              <button className="f_submit" >Submit</button>
+              <motion.input className="f_name" type="text" placeholder='Name'></motion.input><br/>
+              <motion.input className="f_email" type="text" placeholder='Email'></motion.input><br/>
+              <motion.textarea rows={8} className ="f_message" placeholder='Message'/><br/>
+              <motion.button className="f_submit" >Submit</motion.button>
             </motion.form>
             </div>
 

@@ -18,6 +18,7 @@
 nav{
   display: flex;
   justify-content: space-between;
+
 }
 
 body{
@@ -34,6 +35,7 @@ body{
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  scroll-behavior: smooth;
   
 }
 
@@ -137,6 +139,60 @@ body{
   height: 700px;
   
 }
+
+.hamicon{
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+ 
+@media(max-width: 1194px ){
+  .sections{
+    display: none;
+  }
+  .hiButton{
+    display: none;
+  }
+  .hamicon{
+    display: block;   
+  }
+  .circle1{
+    width: 350px;
+    height: 350px;
+  }
+  .pfp{
+    width: 300px;
+    height: 450px;
+    margin-top: 9em;
+  }
+  
+}
+  
+  @media(max-width: 855px ){
+    .circle1{
+      width: 50px;
+      height: 50px;
+    }
+    .content{
+      flex-direction: column;
+    }
+    .desc{
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 526px){
+    .circle1{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+
+ 
+
+
+
 
 .sec2{
  
@@ -383,4 +439,27 @@ input:focus {
 
 .formContainer{
   position: relative;
+}
+
+@media(max-width: 1170px){
+
+  .sec5{
+    gap: 1em;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  input{
+    width: 20rem;
+    align-self: center;
+
+  }
+  .f_message{
+    width: 20rem;
+    align-self: center;
+  }
+  .phonecall{
+    height: 350px;
+    width: 350px ;
+  }
+
 }
