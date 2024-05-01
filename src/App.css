@@ -147,8 +147,6 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -50px;
-  height: 100vh;
   --mask:
     radial-gradient(82.73px at 50% 111px,#000 99%,#0000 101%) calc(50% - 74px) 0/148px 100%,
     radial-gradient(82.73px at 50% -74px,#0000 99%,#000 101%) 50% 37px/148px 100% repeat-x;
@@ -158,15 +156,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px;
-  gap: 200px;
-  font-size: 20px;
+  /* margin-top: -50px; */
+  padding: 4em;
+  gap: 12em;
+  font-size: 1.35em;
   font-weight: 500;
 }
 
 .sec2_img{
-  width: 600px ;
-  height: 400px;
+  width: 50em ;
+  height: 20em;
   border-radius: 5%;
   filter:hue-rotate(290deg) opacity(0.8) drop-shadow(9px 9px 11px rgb(44, 42, 42));
   
@@ -253,6 +252,7 @@ body{
   justify-content: center;
   text-align: center; 
   
+  
 }
 .sec4{
   background-image: url('./assets/House.png');
@@ -265,6 +265,9 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  
+  
 
 }
 
@@ -281,9 +284,16 @@ body{
   filter: drop-shadow(7px 7px 8px rgba(0, 0, 0, 0.479));
 
 }
+
+
+
 .text2{
-  overflow: hidden;
-  position: relative;
+  
+  
+  
+  
+  color: white;
+  font-weight: 800;
 }
 
 
@@ -383,4 +393,31 @@ input:focus {
 
 .formContainer{
   position: relative;
+}
+
+@media (max-width: 1300px) {
+  .sec2{
+    flex-direction: column;
+    gap: 8em;
+
+  }
+  .sec2_img{
+    width: 30em;
+  }
+  
+  
+}
+
+@media (max-width: 780px){
+  .sec2_img{
+    width: 22em;
+    height: 15em;
+  }
+}
+
+@media (max-width: 570px){
+  .sec2_img{
+    width: 15em;
+    height: 10em;
+  }
 }

@@ -100,13 +100,18 @@ function Home() {
 
           <Clouds />
           <section className="sec3">
+            
             <div className="text1">
               FURTHER
             </div>
+            
           </section>
 
           <section className="sec4">
+          <div className="feature-content">
             <div className="text2">
+             
+              </div>
             </div>
           </section>
 
@@ -153,11 +158,11 @@ function Home() {
               </motion.div>
 
             <motion.form className="fill" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:3.5, duration:1}} >
-              <input className="f_name" type="text" placeholder='Name'></input><br/>
-              <input className="f_email" type="text" placeholder='Email'></input><br/>
-              <input className ="f_message" type="text" placeholder='Message'></input><br/>
-              <textarea rows={8} className ="f_message" placeholder='Message'/><br/>
-              <button className="f_submit" >Submit</button>
+              <motion.input className="f_name" type="text" placeholder='Name'></motion.input><motion.br/>
+              <motion.input className="f_email" type="text" placeholder='Email'></motion.input><motion.br/>
+             
+              <motion.textarea rows={8} className ="f_message" placeholder='Message'/><motion.br/>
+              <motion.button className="f_submit" >Submit</motion.button>
             </motion.form>
             </div>
 

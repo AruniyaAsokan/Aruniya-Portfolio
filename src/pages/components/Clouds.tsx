@@ -41,8 +41,8 @@ export default function Clouds() {
         <img className="cloudMask" src={cloudMask} alt="cloudMask"/>
   
     </div>
-
-    <div id="hero">EXPLORE 
+    <div id="center_hero">
+        <div id="hero">EXPLORE 
           <motion.div id="image_container" variants={variants} whileHover="move"
           // onMouseOver={handleMouseOver}
           // onMouseOut={handleMouseOut}
@@ -56,6 +56,7 @@ export default function Clouds() {
             />
           </motion.div>
         </div>
+      </div>
     
     
     </>
