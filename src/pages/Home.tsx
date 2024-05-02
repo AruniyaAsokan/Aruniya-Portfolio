@@ -10,6 +10,11 @@ import takao from '../assets/takao.jpg'
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
+import work from "../assets/work.svg"
+import webdev from "../assets/webdev.png"
+import webdevp from "../assets/webdevp.png"
+import web from "../assets/web.png"
+import dev from "../assets/dev.png"
 
 function Home() {
 
@@ -91,12 +96,13 @@ function Home() {
           </div>
 
           <section className="sec2">
+          <motion.img className="sec2_img animate-pop " src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} />
             <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4}} viewport={{ once: true }} >
               <motion.h1 >CURIOUS... BY NAME, BY NATURE</motion.h1>
               <motion.p>It’s what inspires us to whip up, throw together, tear, shake, and break the rules – on a mission to redefine food for a new generation.
               </motion.p>
             </motion.div>
-            <motion.img className="sec2_img animate-pop " src={takao} alt="kurko_basuke" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} />
+            
           </section>
 
 
@@ -109,13 +115,13 @@ function Home() {
             
           </section>
 
-          <section className="sec4">
-          <div className="feature-content">
-            <div className="text2">
+          <motion.section className="sec4" viewport={{ once: true }}>
+            
+            <motion.div className="text2">
              
-              </div>
-            </div>
-          </section>
+            </motion.div>
+            
+          </motion.section>
 
           <section className="sec5">
           <motion.div className="text3" variants={variants} initial="initial" whileInView="animate" viewport={{ once: true }}>
