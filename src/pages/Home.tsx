@@ -6,7 +6,7 @@ import git_hub from '../assets/git.svg'
 import coding from '../assets/codingninjas.svg'
 import Clouds from './components/Clouds'
 import {motion} from "framer-motion"
-import { cubicBezier } from "framer-motion"
+// import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
 import web from "../assets/web.png"
 
