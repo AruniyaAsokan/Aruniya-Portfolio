@@ -1,6 +1,5 @@
-// import { useState } from 'react'
 import './../App.css'
-import pfp from '../assets/ayanoo.png'
+import pfp from '../assets/dp.png'
 import l from '../assets/linkedin.svg'
 import arrow_long from '../assets/arrow.svg'
 import git_hub from '../assets/git.svg'
@@ -9,15 +8,10 @@ import Clouds from './components/Clouds'
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
-import work from "../assets/work.svg"
-import webdev from "../assets/webdev.png"
-import webdevp from "../assets/webdevp.png"
 import web from "../assets/web.png"
-import dev from "../assets/dev.png"
+
 
 function Home() {
-
-  // const [count, setCount] = useState(0)
   
   const variants = {
     initial: {
@@ -221,6 +215,10 @@ function Home() {
               <motion.button className="f_submit" >Submit</motion.button>
             </motion.form>
             </div>
+
+          </section>
+          <section className="sec6">
+          Copyright © 2024 Aruniya /\/ Aruliya Asokan
 
           </section>
 

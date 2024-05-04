@@ -12,8 +12,6 @@
   padding: 40px 70px 40px 70px;
   background-color: white;
   /* background-image: linear-gradient(#ffffff, #3a81b9 ); */
-  /* rgb(252,242,240)  */
-  /* #3476b0 ; */
   margin: 0;
 }
 nav{
@@ -43,11 +41,8 @@ body{
 
 .heading{
   font-weight: 500;
-  /* padding: 0.6em; */
 }
-/* .description{
-  padding: 0.6em;
-} */
+
 
 .hiButton{
   border-radius: 2.5em;
@@ -142,7 +137,7 @@ body{
   z-index: 1;
   margin-top: 2.5em;
   width : 500px;
-  height: 700px;
+  height: 600px;
   
 }
 
@@ -195,18 +190,10 @@ body{
   }
 
 
- 
-
-
-
-
 .sec2{
  
   background-color: #7fb2ff;
-  /* background-image: linear-gradient(#29649c, white); */
   height: 100vh;
-  /* position: relative;
-  overflow: hidden; */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -219,7 +206,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: -50px; */
   padding: 4em;
   gap: 7em;
   font-size: 1.35em;
@@ -264,25 +250,6 @@ body{
 
 
 
-/* .circle2{
-  border-radius: 50%;
-  width: 200px ;
-  height: 200px ;
-  color:green;
-}
-.circle3{
-  border-radius: 50%;
-  width: 100px ;
-  height: 100px ;
-  color:green;
-}
-.circle4{
-  border-radius: 50%;
-  width: 200px ;
-  height: 200px ;
-  color:green;
-} */
-
 @media(max-width: 900px){
   .circle1{
     width: 300px;
@@ -297,7 +264,6 @@ body{
 
 .main-content {
   position: relative;
-  /* z-index: 1; */
   background: hsl(0, 0%, 100%);
   padding-block: 6rem;
 }
@@ -331,46 +297,10 @@ body{
   justify-content: left;
   text-align: left;
   padding: 4em;
-
-
-  /* -webkit-animation:popup 5s linear infinite;
-     Safari and Chrome 
-    animation: pop-up 600ms cubic-bezier(1, 1.8, 0, 0.78); */
 }
-/* @-webkit-@keyframes pop-up {
-  0% {
-      transform: scale(0);
-      opacity: 0;
-  }
 
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-
-}
-@keyframes pop-up {
-  0% {
-      transform: scale(0);
-      opacity: 0;
-  }
-
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-
-} */
-
-/* .work{
-  height: 500px;
-  width: 400px;
-  
-} */
 
 .text1{
-  /* overflow: hidden;
-  position: relative; */
   font-weight: 1000;
   font-size: 5em;
   background: linear-gradient(#47a6ff,#0044ffd1);
@@ -400,8 +330,6 @@ body{
   justify-content: center;
   gap: 10rem;
   min-height: 100vh;
-  /* background-image: url('./assets/halftone.png'); */
-  /* background-image: linear-gradient(blue, red); */
   background-color: #7fb2ff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,7 +414,6 @@ input:focus {
 
 .phonesvg{
   stroke: white;
-  /* background-color: rebeccapurple; */
   position: absolute;
   margin: auto;
   
@@ -543,4 +470,11 @@ input:focus {
     width: 15em;
     height: 10em;
   }
+}
+
+.sec6{
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  color:rgb(0, 123, 255);
 }

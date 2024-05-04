@@ -8,19 +8,8 @@ import sky from "../../assets/parallax-imgs/sky.jpg"
 import cloudMask from "../../assets/parallax-imgs/cloudMask.png"
 import downarrow from "../../assets/whitearrow.png"
 import {motion} from "framer-motion"
-// import { useRef} from "react";
-// import React, { useState } from 'react';
 
 export default function Clouds() {
-  
-//   const sec3 = useRef(null);
-//   const scrollToSection = (elementRef) => {
-//   window.scrollTo({
-//     top: elementRef.current.offsetTop,
-//     behavior: "smooth",
-//   });
-//  };
-  // 
 
   
   const variants = {
@@ -30,12 +19,6 @@ export default function Clouds() {
       scale: 1,
 
     }
-
-    // tap: {
-
-    // }
-
-    
 
   };
 
@@ -56,11 +39,7 @@ export default function Clouds() {
     <div id="hero">
       EXPLORE 
         <a href="#further">
-          <motion.div id="image_container" variants={variants} whileHover="move" whileTap="tap"
-          // onMouseOver={handleMouseOver}
-          // onMouseOut={handleMouseOut}
-          // ref={imageRef} 
-          >
+          <motion.div id="image_container" variants={variants} whileHover="move" whileTap="tap">
             <motion.img 
                 id="downarrow" 
                 src={downarrow} 
