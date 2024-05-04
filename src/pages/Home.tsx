@@ -36,9 +36,6 @@ function Home() {
     animate2: {
       scale: 1,
       opacity: 1,
-      animation: {
-        cubic: cubicBezier(1, 1.8, 0, 0.78),
-      },
     },
    
     move: {
@@ -75,7 +72,7 @@ function Home() {
             <div className="content">
               <div className="desc">
                 <h1 className="heading" >Greetings, I'm </h1><br/>
-                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Aruniya Asokan</motion.h1><br/>
+                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3, ease: [0.68, -0.55, 0.265, 1.55]}} viewport={{ once: true }}>Aruniya Asokan</motion.h1><br/>
                 <p className = "description">Dedicated and driven individual aspiring to excel as a Full Stack Web Developer. Proficient in HTML and CSS with a strong foundation, actively honing skills in JavaScript with hands-on experience. Familiarity with React.js adds a dynamic edge to my toolkit. Eager to contribute and grow within dynamic development environments.</p>
                 <div className="links">
                   <a href="https://www.linkedin.com/in/aruniya-asokan-7974b924b/" ><img src={l} alt="linkedin_logo" width="20" height="20"></img></a>
@@ -88,7 +85,7 @@ function Home() {
 
               <div className="img_bg">
                 <div className="circle1"></div>
-                <motion.img className="pfp animate-pop" src={pfp} alt="Ayanokoji" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
+                <motion.img className="pfp" src={pfp} alt="Ayanokoji" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
                 <div className="circle2"></div>
                 <div className="circle3"></div>
                 <div className="circle4"></div>
@@ -97,8 +94,8 @@ function Home() {
           </div>
 
           <section id="section2" className="sec2">
-          <motion.img className="sec2_img animate-pop " src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001}} viewport={{ once: true }} />
-            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} >
+          <motion.img className="sec2_img" src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001, ease: [0.68, -0.55, 0.265, 1.55]}} viewport={{ once: true }} />
+            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2, ease: [0.68, -0.55, 0.265, 1.55]}} viewport={{ once: true }} >
               <motion.h1 >ABOUT ME...</motion.h1><br/>
               <motion.p>I'm a 2nd year student currently doing B.Tech in Computer Science and Engineering from Vellore Institute Of Technology, Chennai.
               </motion.p>
