@@ -45,7 +45,15 @@ function Home() {
       animation: {
         cubic: cubicBezier(1, 1.8, 0, 0.78),
       },
+    },
+   
+    move: {
+      
+      translateY: "20px",
+      scale: 1,
+
     }
+  
   
   };
   
@@ -60,28 +68,28 @@ function Home() {
             <nav>
               <h1 className="title">  Portfolio  </h1>
               <ul className="sections">
-                <li><a href=" ">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li><a href="https://github.com/kanaame">Projects</a></li>
-                <li><a href="">Resume</a></li>
+                <li><a href="https://docs.google.com/document/d/1EcBiA_YQg9kY4iE0i7RmOI_ZJOiFi4MGFaYB5rRFptU/edit?usp=sharing">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
-              <button className="hiButton">
+              <a href="#contact"><button className="hiButton">
                 Say hi!
-              </button>
+              </button></a>
               <img className="hamicon" src={ham} alt="ham icon"/>
             </nav>
             <div className="content">
               <div className="desc">
-                <h1 className="heading" >Greetings, I'm </h1>
-                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Kiyotaka Ayanokōji</motion.h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <h1 className="heading" >Greetings, I'm </h1><br/>
+                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Aruniya Asokan</motion.h1><br/>
+                <p className = "description">Dedicated and driven individual aspiring to excel as a Full Stack Web Developer. Proficient in HTML and CSS with a strong foundation, actively honing skills in JavaScript with hands-on experience. Familiarity with React.js adds a dynamic edge to my toolkit. Eager to contribute and grow within dynamic development environments.</p>
                 <div className="links">
-                  <img src={l} alt="linkedin_logo" width="20" height="20"></img>
-                  <img src={git_hub} alt="github_logo" width="20" height="20"></img>
-                  <img src={coding} alt="codingninjas_logo" width="20" height="20"></img>
+                  <a href="https://www.linkedin.com/in/aruniya-asokan-7974b924b/" ><img src={l} alt="linkedin_logo" width="20" height="20"></img></a>
+                  <a href="https://github.com/kanaame" ><img src={git_hub} alt="github_logo" width="20" height="20"></img></a>
+                  <a href="https://www.naukri.com/code360/profile/1f3bb94e-9ca3-466b-b9f8-8ef1a10f43c3" ><img src={coding} alt="codingninjas_logo" width="20" height="20"></img></a>
 
                 </div>
-                <img className="arrow" src={arrow_long} alt="long down arrow" width="40" height="100" />
+                <a href="#section2" ><motion.img className="arrow" src={arrow_long} alt="long down arrow" width="40" height="100" variants={variants} whileHover="move" whileTap="tap" /></a>
               </div>
 
               <div className="img_bg">
@@ -94,11 +102,31 @@ function Home() {
             </div>
           </div>
 
-          <section className="sec2">
+          <section id="section2" className="sec2">
           <motion.img className="sec2_img animate-pop " src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001}} viewport={{ once: true }} />
             <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} >
-              <motion.h1 >CURIOUS... BY NAME, BY NATURE</motion.h1>
-              <motion.p>It’s what inspires us to whip up, throw together, tear, shake, and break the rules – on a mission to redefine food for a new generation.
+              <motion.h1 >ABOUT ME...</motion.h1><br/>
+              <motion.p>I'm a 2nd year student currently doing B.Tech in Computer Science and Engineering from Vellore Institute Of Technology, Chennai.
+              </motion.p>
+              <br/><br/>
+              <motion.h1 >SKILLS</motion.h1><br/>
+              <motion.p>
+                
+                <ul style={{display: "flex", gap: "2em"}}>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                  <li>C++</li>
+                  <li>Python</li>
+                </ul>
+                <br/>
+              
+                <ul style={{display: "flex", gap: "2em"}}>
+                  <li>Git</li>
+                  <li>VScode</li>
+                  <li>GitHub</li>
+                </ul>
               </motion.p>
             </motion.div>
             
@@ -117,7 +145,29 @@ function Home() {
           <motion.section className="sec4" viewport={{ once: true }}>
             
             <motion.div className="text2">
-             
+            <motion.h1 >PROJECTS</motion.h1><br/>
+              <motion.p>
+                Portfolio Website:
+                <ul>
+                <li>Technologies: React.js, JavaScript, advanced CSS & HTML.</li>
+                <li>Features: Framer Motion animations, responsive design, parallax scrolling.</li>
+                <li>Focus: Dynamic and interactive user components.</li>
+                </ul>
+                <br/>
+                LinkedIn Login Clone:
+                <ul>
+                <li>Technologies: HTML, Vanilla CSS.</li>
+                <li>Features: Responsive design, form functionality.</li>
+                <li>Focus: Fundamentals of CSS, showcasing layout and styling proficiency.</li>
+                </ul>
+                <br/>
+                Google Drive Clone:
+                <ul>
+                <li>Technologies: HTML, CSS, Bootstrap.</li>
+                <li>Platform: Developed in CodeSandBox.</li>
+                <li>Focus: Utilizing Bootstrap for quick and responsive web layouts.</li>
+                </ul>
+              </motion.p>
             </motion.div>
             
           </motion.section>
@@ -128,17 +178,17 @@ function Home() {
               <motion.h1 className="h1_tag" variants={variants}>Connect</motion.h1>
               <br/><br/>
               <motion.h3 variants={variants}>Mail</motion.h3>
-              <motion.p variants={variants}>hello@react.dev</motion.p>
+              <motion.p variants={variants}>aruniyaasokan@gmail.com</motion.p>
               <br/><br/>
               <motion.h3 variants={variants}>Address</motion.h3>
-              <motion.p variants={variants}> 123 Avenue Street New York</motion.p>
+              <motion.p variants={variants}> XYZ</motion.p>
               <br/><br/>
               <motion.h3 variants={variants}> Phone</motion.h3>
-              <motion.p variants={variants}> +12345678</motion.p>
+              <motion.p variants={variants}> 9432XXXXXX</motion.p>
             </motion.div>
             
             <div className='formContainer'>
-              <motion.div className='phonesvg' initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:3, duration:0.5}} >
+              <motion.div className='phonesvg' initial={{opacity:1}} whileInView={{opacity:0, zIndex: -1}} transition={{delay:2, duration:0.5}} >
                 <svg className="phonecall" width="450px" height="450px" viewBox="0 0 32.666 32.666">
                 <motion.path
                   strokeWidth={0.2}
@@ -164,7 +214,7 @@ function Home() {
                 </svg>
               </motion.div>
 
-            <motion.form className="fill" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:3.5, duration:1}} >
+            <motion.form className="fill" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:2, duration:1}}>
               <motion.input className="f_name" type="text" placeholder='Name'></motion.input><br/>
               <motion.input className="f_email" type="text" placeholder='Email'></motion.input><br/>
               <motion.textarea rows={8} className ="f_message" placeholder='Message'/><br/>

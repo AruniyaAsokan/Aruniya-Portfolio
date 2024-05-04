@@ -43,7 +43,11 @@ body{
 
 .heading{
   font-weight: 500;
+  /* padding: 0.6em; */
 }
+/* .description{
+  padding: 0.6em;
+} */
 
 .hiButton{
   border-radius: 2.5em;
@@ -318,15 +322,15 @@ body{
   background-image: url('./assets/work.svg');
   background-color: aliceblue;
   background-attachment: fixed;
-  
   background-repeat: no-repeat;
   background-position: right 15% bottom 50%;
   background-size: 500px 400px;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
+  padding: 4em;
 
 
   /* -webkit-animation:popup 5s linear infinite;
@@ -380,12 +384,11 @@ body{
 
 
 .text2{
-  
-  
-  
-  
-  color: white;
-  font-weight: 800;
+  width: 50%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.35em;
+  font-weight: 500;
+  color: #0066ff;
 }
 
 
@@ -445,7 +448,7 @@ input{
 
 .f_submit:hover{
   background-color: white ;
-  color: #feac14 ;
+  color: #007bff ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -486,6 +489,7 @@ input:focus {
   /* background-color: rebeccapurple; */
   position: absolute;
   margin: auto;
+  
 }
 
 .formContainer{
