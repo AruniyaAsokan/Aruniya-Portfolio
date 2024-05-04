@@ -4,7 +4,7 @@ import pfp from '../assets/ayanoo.png'
 import l from '../assets/linkedin.svg'
 import arrow_long from '../assets/arrow.svg'
 import git_hub from '../assets/git.svg'
-import insta from '../assets/insta.svg'
+import coding from '../assets/codingninjas.svg'
 import Clouds from './components/Clouds'
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
@@ -63,7 +63,7 @@ function Home() {
                 <li><a href=" ">Home</a></li>
                 <li><a href="https://github.com/kanaame">Projects</a></li>
                 <li><a href="">Resume</a></li>
-                <li><a href="#contact">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
               <button className="hiButton">
                 Say hi!
@@ -78,7 +78,7 @@ function Home() {
                 <div className="links">
                   <img src={l} alt="linkedin_logo" width="20" height="20"></img>
                   <img src={git_hub} alt="github_logo" width="20" height="20"></img>
-                  <img src={insta} alt="instagram_logo" width="20" height="20"></img>
+                  <img src={coding} alt="codingninjas_logo" width="20" height="20"></img>
 
                 </div>
                 <img className="arrow" src={arrow_long} alt="long down arrow" width="40" height="100" />
