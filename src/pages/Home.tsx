@@ -112,7 +112,6 @@ function Home() {
           <section className="sec4">
           <div className="feature-content">
             <div className="text2">
-             
               </div>
             </div>
           </section>
