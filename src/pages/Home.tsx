@@ -6,10 +6,14 @@ import arrow_long from '../assets/arrow.svg'
 import git_hub from '../assets/git.svg'
 import insta from '../assets/insta.svg'
 import Clouds from './components/Clouds'
-import takao from '../assets/takao.jpg'
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
+import work from "../assets/work.svg"
+import webdev from "../assets/webdev.png"
+import webdevp from "../assets/webdevp.png"
+import web from "../assets/web.png"
+import dev from "../assets/dev.png"
 
 function Home() {
 
@@ -57,9 +61,9 @@ function Home() {
               <h1 className="title">  Portfolio  </h1>
               <ul className="sections">
                 <li><a href=" ">Home</a></li>
-                <li><a href=" ">Projects</a></li>
-                <li><a href=" ">Resume</a></li>
-                <li><a href=" ">Awards</a></li>
+                <li><a href="https://github.com/kanaame">Projects</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="#contact">Awards</a></li>
               </ul>
               <button className="hiButton">
                 Say hi!
@@ -91,12 +95,13 @@ function Home() {
           </div>
 
           <section className="sec2">
-            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4}} viewport={{ once: true }} >
+          <motion.img className="sec2_img animate-pop " src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001}} viewport={{ once: true }} />
+            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} >
               <motion.h1 >CURIOUS... BY NAME, BY NATURE</motion.h1>
               <motion.p>It’s what inspires us to whip up, throw together, tear, shake, and break the rules – on a mission to redefine food for a new generation.
               </motion.p>
             </motion.div>
-            <motion.img className="sec2_img animate-pop " src={takao} alt="kurko_basuke" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} />
+            
           </section>
 
 
@@ -109,14 +114,15 @@ function Home() {
             
           </section>
 
-          <section className="sec4">
-          <div className="feature-content">
-            <div className="text2">
-              </div>
-            </div>
-          </section>
+          <motion.section className="sec4" viewport={{ once: true }}>
+            
+            <motion.div className="text2">
+             
+            </motion.div>
+            
+          </motion.section>
 
-          <section className="sec5">
+          <section id= "contact" className="sec5">
           <motion.div className="text3" variants={variants} initial="initial" whileInView="animate" viewport={{ once: true }}>
               <motion.h1 className="h1_tag" variants={variants}>Let's</motion.h1>
               <motion.h1 className="h1_tag" variants={variants}>Connect</motion.h1>
