@@ -70,7 +70,7 @@ function Home() {
               <ul className="sections">
                 <li><a href="./">Home</a></li>
                 <li><a href="https://github.com/kanaame">Projects</a></li>
-                <li><a href="https://docs.google.com/document/d/1EcBiA_YQg9kY4iE0i7RmOI_ZJOiFi4MGFaYB5rRFptU/edit?usp=sharing">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/1jW-0FrJhX0xXKlxVOFOkZyTRv9j2VgqY/view?usp=sharing">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
               <a href="#contact"><button className="hiButton">
