@@ -215,7 +215,7 @@ function Home() {
 
           </section>
           <section className="sec6">
-          Copyright © 2024 Aruniya /\/ Aruliya Asokan
+          Made with ❤ from scratch 2024 by Aruliya & Aruniya Asokan
 
           </section>
 
